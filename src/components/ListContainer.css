@@ -1,0 +1,63 @@
+.Movie__List__Container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 213px;
+}
+.Type h2 {
+    font-weight: normal;
+    font-size: 1.8em;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.Movie__Sl {
+    overflow: visible;
+}
+.Info {
+    margin-top: 1em;
+}
+.Poster {
+    position: relative;
+    padding-bottom: 150%;
+    overflow: hidden;
+    border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.28);
+}
+.Poster img {
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.Average span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 100%;
+    margin-right: 5px;
+}
+.Average i {
+    display: block;
+    color: #f95862;
+}
+.Title {
+    margin-top: 5px;
+}
+.Title h3 {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Title h3 {
+        font-size: 0.8em;
+    }
+}

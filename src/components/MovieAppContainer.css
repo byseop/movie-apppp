@@ -1,0 +1,7 @@
+.MovieApp {
+    overflow: hidden;
+}
+.MovieApp__Container {
+    position: relative;
+}
+

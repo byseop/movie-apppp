@@ -1,0 +1,67 @@
+.Movie__Background {
+    position: relative;
+    padding-bottom: 42%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.Movie__Background:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to top, #1d1d27, transparent);
+}
+
+.Movie__Detail__Inner {
+    max-width: 1200px;
+    margin: -2.5em auto 0;
+    position: relative;
+}
+.Movie__Detail__Inner .Title {
+    display: inline-block;
+}
+.Movie__Detail__Inner .Title h2 {
+    font-size: 2.4em;
+    margin: 0;
+}
+.Movie__Detail__Inner .Released__Date {
+    display: inline-block;
+    margin-left: 2em;
+    font-size: 1em;
+}
+.Movie__Detail__Inner .Tagline {
+    font-size: 1.2em;
+}
+.Movie__Detail__Inner .Genres {
+    margin-top: 20px;
+}
+.Movie__Detail__Inner .Genre__List {
+    display: inline-block;
+    margin-right: 1em;
+    border: 1px solid #fff;
+    border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -ms-border-radius: 0.8em;
+    -o-border-radius: 0.8em;
+}
+.Movie__Detail__Inner .Genre__List p {
+    font-size: 0.8em;
+    padding: 0.5em 0.8em;
+    margin: 0;
+}
+
+@media screen and (max-width: 1217px) {
+    .Movie__Detail__Inner {
+        padding: 0 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Movie__Background {
+        padding-bottom: 50vh;
+    }
+}

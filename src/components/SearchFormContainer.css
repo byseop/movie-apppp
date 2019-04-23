@@ -1,0 +1,60 @@
+.Search__Form__Wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 10;
+}
+.Input__Wrap {
+    max-width: 420px;
+    border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+    overflow: hidden;
+}
+.Input__Wrap input {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 8px 0;
+    text-indent: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5em;
+    border-bottom: 1px solid #646464;
+    outline: none;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+.Input__Wrap input:focus {
+    background: rgba(0, 0, 0, .2);
+    border-bottom-color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1217px) {
+    .Search__Form__Wrapper {
+        padding: 80px 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Search__Form__Wrapper {
+        padding: 40px 1.5em;
+    }
+    .Input__Wrap input {
+        font-size: 1em;
+    }
+}
