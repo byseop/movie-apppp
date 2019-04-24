@@ -1,0 +1,49 @@
+.Popular__Movie__Container {
+    max-width: 1200px;
+    margin: 2em auto 0;
+}
+.Popular__List_Wrap {
+}
+.Popular__List {
+    display: inline-block;
+    width: 50%;
+}
+.Popular__Poster__Wrap {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.Popular__Poster__Wrap img {
+    width: 100%;
+}
+.Popular__Info__Wrap {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding: 2em;
+}
+.Popular__Info__Wrap .Overview p {
+    line-height: 1.5em;
+    height: 4.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 1217px) {
+    .Popular__Movie__Container {
+        margin: 2em 1.5em 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Popular__List {
+        display: block;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+}

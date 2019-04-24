@@ -1,9 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import ListContainer from './ListContainer';
+
 import SearchFormContainer from './SearchFormContainer';
 import { detail } from '../pages';
 import './MovieAppContainer.css';
+import MovieApp from './MovieApp';
 
 const MovieAppContainer = () => {
     return (
@@ -11,7 +12,7 @@ const MovieAppContainer = () => {
             <div className="MovieApp__Container">
                 <SearchFormContainer />
                 <Switch>
-                    <Route exact path='/' component={ListContainer} />
+                    <Route exact path='/' component={MovieApp} />
                     <Route path='/detail/:movieId' component={detail} />
                 </Switch>
             </div>

@@ -141,8 +141,6 @@
       ]
     ]
   },
-  "main": "index.js",
-  "repository": "https://github.com/byseop/movie-app.git",
   "author": "byseop <byseop@gmail.com>",
   "license": "MIT",
   "devDependencies": {

@@ -9,12 +9,10 @@ export default class store {
         this.root = root;
     }
 
+    //──────────────────────────────────────────────────────────────
+    // Movie List
     @observable isLoadMovieList = 'pending';
     @observable movieListArr = [];
-
-    @observable isLoadMovieDetail = 'pending';
-    @observable movieDetail = [];
-
     getMovieList = flow(function*() {
         try {
             const response = yield axios.get(
@@ -33,7 +31,12 @@ export default class store {
         }
     });
     getMovieList = this.getMovieList.bind(this);
+    //──────────────────────────────────────────────────────────────
 
+    //──────────────────────────────────────────────────────────────
+    // Movie Detail
+    @observable isLoadMovieDetail = 'pending';
+    @observable movieDetail = [];
     getMovieDetail = flow(function* (movieId) {
         try {
             const response = yield axios.get(
@@ -51,4 +54,30 @@ export default class store {
         }
     });
     getMovieDetail = this.getMovieDetail.bind(this);
+    //──────────────────────────────────────────────────────────────
+
+    //──────────────────────────────────────────────────────────────
+    // Popular Movie
+    @observable isLoadPopular = 'pending';
+    @observable pplrMovie = [];
+
+    getPplrMovie = flow(function* () {
+        try {
+            const response = yield axios.get(
+                MovieAPI.DEFAULT_URL
+                + MovieAPI.POPULAR
+                + MovieAPI.API_KEY
+                + MovieAPI.LANGUAGE_EN
+            );
+            const data = response.data;
+            this.pplrMovie = data;
+            this.isLoadPopular = 'done';
+        }
+        catch (error) {
+            console.error(error);
+            this.isLoadPopular = 'error';
+        }
+    })
+    getPplrMovie = this.getPplrMovie.bind(this);
+    //──────────────────────────────────────────────────────────────
 }

@@ -6,7 +6,8 @@ const MovieDetail = ({
     title,
     release_date,
     tagline,
-    genres
+    genres,
+    overview
 }) => {
     return (
         <div className="Movie__Detail">
@@ -14,6 +15,7 @@ const MovieDetail = ({
             <div className="Movie__Detail__Inner">
                 <Title title={title} release_date={release_date} tagline={tagline} />
                 <Genre genres={genres} />
+                <Overview overview={overview} />
             </div>
         </div>
     );
@@ -65,6 +67,14 @@ const Genre = ({ genres }) => {
             {renderGenre()}
         </div>
     );
+}
+
+const Overview = ({ overview }) => {
+    return (
+        <div className="Overview__Wrap">
+            <p>{overview}</p>
+        </div>
+    )
 }
 
 export default MovieDetail;

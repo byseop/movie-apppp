@@ -20,12 +20,16 @@
     margin: -2.5em auto 0;
     position: relative;
 }
+.Movie__Detail__Inner .Title__Wrap {
+    position: relative;
+}
 .Movie__Detail__Inner .Title {
     display: inline-block;
 }
 .Movie__Detail__Inner .Title h2 {
     font-size: 2.4em;
     margin: 0;
+    line-height: 1.2em;
 }
 .Movie__Detail__Inner .Released__Date {
     display: inline-block;
@@ -34,6 +38,8 @@
 }
 .Movie__Detail__Inner .Tagline {
     font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 5px;
 }
 .Movie__Detail__Inner .Genres {
     margin-top: 20px;
@@ -53,6 +59,14 @@
     padding: 0.5em 0.8em;
     margin: 0;
 }
+.Movie__Detail__Inner .Overview__Wrap {
+    max-width: 600px;
+}
+.Movie__Detail__Inner .Overview__Wrap p {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
 
 @media screen and (max-width: 1217px) {
     .Movie__Detail__Inner {
@@ -63,5 +77,19 @@
 @media screen and (max-width: 768px) {
     .Movie__Background {
         padding-bottom: 50vh;
+    }
+    .Movie__Detail__Inner .Released__Date {
+        position: absolute;
+        left: 5px;
+        margin: 0;
+        top: 0;
+        transform: translateY(-80%);
+        -webkit-transform: translateY(-80%);
+        -moz-transform: translateY(-80%);
+        -ms-transform: translateY(-80%);
+        -o-transform: translateY(-80%);
+    }
+    .Movie__Detail__Inner .Released__Date p {
+        margin: 0;
     }
 }

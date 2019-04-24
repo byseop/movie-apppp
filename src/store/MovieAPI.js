@@ -3,6 +3,7 @@ const MovieAPI = {
     TRENDING: '/trending/movie/week',
     TOP_RATED: '/movie/top_rated',
     UPCOMING: '/movie/upcoming',
+    POPULAR: '/movie/popular',
     // searchKeyword: '&query=' + this.searchWordFix,
 
     SEARCH: '/search/movie',

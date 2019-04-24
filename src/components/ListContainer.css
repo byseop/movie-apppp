@@ -41,6 +41,7 @@
     vertical-align: middle;
     line-height: 100%;
     margin-right: 5px;
+    font-size: 1em;
 }
 .Average i {
     display: block;
@@ -56,7 +57,17 @@
 }
 
 
+@media screen and (max-width: 1217px) {
+    .Movie__List__Container {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .Movie__List__Container {
+        padding-top: 110px;
+    }
     .Title h3 {
         font-size: 0.8em;
     }
